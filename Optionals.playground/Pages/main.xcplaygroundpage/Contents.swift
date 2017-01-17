@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//optional string
 
 
 
@@ -32,7 +32,8 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+print(petName)
+// pet name is nil
 
 
 
@@ -44,7 +45,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = " pecas "
 
 
 
@@ -55,6 +56,7 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
 
 
@@ -66,6 +68,11 @@ var petName: String?
  */
 // write your code here
 
+if petName != nil {
+    print("your pets name is \(petName)")
+}else {
+    print("There is no pet name")
+}
 
 
 
@@ -78,6 +85,9 @@ var petName: String?
 // write your code here
 
 
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +99,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil ")
+}
 
 
 
@@ -99,9 +111,13 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
-
-
-
+//if let anotherPetName = anotherPetName {
+////    
+////    if anotherPetName == nil {
+////        print(" anotherPetName has no value")
+////
+////    }
+////}
 
 
 
@@ -112,6 +128,12 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
+
+let newThing: String?
+
+newThing = "thing"
+
+print(newThing)
 
 
 
@@ -126,6 +148,12 @@ var anotherPetName: String?
  */
 // write your code here
 
+let thing :String? = nil
+
+thing = "thing "
+
+
+print(thing)
 
 
 
